@@ -23,6 +23,7 @@ export const globalStyles = StyleSheet.create({
     padding: 10,
     width: '100%',
     alignItems: 'center',
+    marginBottom: 10,
   },
   buttonText: {
     color: globalColores.background,
