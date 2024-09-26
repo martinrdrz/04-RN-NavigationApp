@@ -6,6 +6,7 @@ import {globalColores} from '../theme/theme';
 import {Text} from 'react-native';
 import {TopTabNavigator} from './TopTabNavigator';
 import {StackNavigator} from './StackNavigator';
+import {IonIcon} from '../components/shared/IonIcon';
 
 const Tab = createBottomTabNavigator();
 
@@ -37,7 +38,11 @@ export const BottomTabsNavigator = () => {
         options={{
           title: 'Tit-Tab1',
           tabBarIcon: props => (
-            <Text style={{color: props.color}}>Icon-Tabs</Text>
+            <IonIcon
+              name="accessibility-outline"
+              size={25}
+              color={props.color}
+            />
           ),
         }}
       />
@@ -47,7 +52,7 @@ export const BottomTabsNavigator = () => {
         options={{
           title: 'Tit-Tab2',
           tabBarIcon: props => (
-            <Text style={{color: props.color}}>Icon-Tabs</Text>
+            <IonIcon name="airplane-outline" size={25} color={props.color} />
           ),
         }}
       />
@@ -57,7 +62,7 @@ export const BottomTabsNavigator = () => {
         options={{
           title: 'Tit-Tab3',
           tabBarIcon: props => (
-            <Text style={{color: props.color}}>Icon-Tabs</Text>
+            <IonIcon name="bar-chart-outline" size={25} color={props.color} />
           ),
         }}
       />
